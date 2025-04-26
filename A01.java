@@ -63,13 +63,13 @@ public class A01 {
     double pi = 3.1416;
         
         // Calculando a área lateral
-        double areaLateral = 2 * pi * raio * altura;
+        double areaLateral = 2 * pi * raio * (raio + altura);
         
         // Calculando o volume
-        double volume = pi * raio * raio * altura; 
+        //double volume = pi * raio * raio * altura; 
         
         System.out.println("Area lateral do cilindro: " + areaLateral + " cm²");
-        System.out.println("Volume do cilindro: " + volume + " cm³");
+        //System.out.println("Volume do cilindro: " + volume + " cm³");
         
     /*exe4*/
     
