@@ -47,7 +47,7 @@ markmap:
     - char - 'a' or 'B';
     - boolean - true or false;
 
-- camelCase
+- camelCase (convensão)
     - studentID = 15;
     - int studentAge = 23;
 
