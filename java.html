@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"markmap","children":[{"content":"INTRODU&#xc7;&#xc3;O","children":[{"content":"Instalador","children":[{"content":"JDK - https://download.oracle.com/java/24/latest/jdk-24_windows-x64_bin.exe","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"Netbeans - https://netbeans.apache.org/front/main/download/nb25/","children":[],"payload":{"tag":"li","lines":"12,13"}}],"payload":{"tag":"li","lines":"10,13"}},{"content":"Java","children":[{"content":"Multiplataforma","children":[],"payload":{"tag":"li","lines":"14,15"}}],"payload":{"tag":"li","lines":"13,15"}},{"content":"JVM","children":[{"content":"Maquina virtual","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"Alto nivel","children":[],"payload":{"tag":"li","lines":"17,18"}}],"payload":{"tag":"li","lines":"15,18"}},{"content":"Bytecode","children":[{"content":"Gerado pelo compilador, compilado, baixo nivel (assembly)","children":[],"payload":{"tag":"li","lines":"19,20"}}],"payload":{"tag":"li","lines":"18,20"}},{"content":"JRE","children":[{"content":"Ambiente de tempo em execu&#xe7;&#xe3;o, sem ferramenta de desenvolvimento, runtime","children":[],"payload":{"tag":"li","lines":"21,22"}}],"payload":{"tag":"li","lines":"20,22"}},{"content":"JAR","children":[{"content":"Bibliotecas","children":[],"payload":{"tag":"li","lines":"23,24"}}],"payload":{"tag":"li","lines":"22,24"}},{"content":"Javac","children":[{"content":"Compilador do java, transforma o fonte em bytecode (arquivos .class) e executa na JVM","children":[],"payload":{"tag":"li","lines":"25,27"}}],"payload":{"tag":"li","lines":"24,27"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"FERRAMENTA","children":[{"content":"Netbeans","children":[{"content":"Source Packages","children":[{"content":"Arquivos java","children":[],"payload":{"tag":"li","lines":"31,32"}},{"content":"Triangulo&gt; classe main &gt; responsavel por executar o codigo &gt; sempre que for executar uma classe, tem que ter o &quot;main&quot;","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"Nomear a package &gt; ex.: com.mycompany.a01","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"Classe publica A01.java","children":[],"payload":{"tag":"li","lines":"34,35"}}],"payload":{"tag":"li","lines":"30,35"}},{"content":"Java Dependencies","children":[{"content":"Dependencias java","children":[],"payload":{"tag":"li","lines":"36,37"}}],"payload":{"tag":"li","lines":"35,37"}},{"content":"Atalhos","children":[{"content":"digite &gt; sout + tab &gt; System.out.println(&quot;&quot;);","children":[],"payload":{"tag":"li","lines":"38,40"}}],"payload":{"tag":"li","lines":"37,40"}}],"payload":{"tag":"li","lines":"29,40"}}],"payload":{"tag":"h2","lines":"27,28"}},{"content":"VARIAVEIS","children":[{"content":"\n<p data-lines=\"42,43\">Tipos de Variaveis</p>","children":[{"content":"String - &quot;Hello&quot;;","children":[],"payload":{"tag":"li","lines":"43,44"}},{"content":"int - 123 or -123;","children":[],"payload":{"tag":"li","lines":"44,45"}},{"content":"float - 19.99 or -19.99;","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"char - &apos;a&apos; or &apos;B&apos;;","children":[],"payload":{"tag":"li","lines":"46,47"}},{"content":"boolean - true or false;","children":[],"payload":{"tag":"li","lines":"47,49"}}],"payload":{"tag":"li","lines":"42,49"}},{"content":"\n<p data-lines=\"49,50\">camelCase</p>","children":[{"content":"studentID = 15;","children":[],"payload":{"tag":"li","lines":"50,51"}},{"content":"int studentAge = 23;","children":[],"payload":{"tag":"li","lines":"51,53"}}],"payload":{"tag":"li","lines":"49,53"}},{"content":"\n<p data-lines=\"53,54\">Tipos Primitivos</p>","children":[{"content":"byte\tStores whole numbers from -128 to 127","children":[],"payload":{"tag":"li","lines":"54,55"}},{"content":"short\tStores whole numbers from -32,768 to 32,767","children":[],"payload":{"tag":"li","lines":"55,56"}},{"content":"int\tStores whole numbers from -2,147,483,648 to 2,147,483,647","children":[],"payload":{"tag":"li","lines":"56,57"}},{"content":"long\tStores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807","children":[],"payload":{"tag":"li","lines":"57,58"}},{"content":"float\tStores fractional numbers. Sufficient for storing 6 to 7 decimal digits","children":[],"payload":{"tag":"li","lines":"58,59"}},{"content":"double\tStores fractional numbers. Sufficient for storing 15 to 16 decimal digits","children":[],"payload":{"tag":"li","lines":"59,60"}},{"content":"boolean\tStores true or false values","children":[],"payload":{"tag":"li","lines":"60,61"}},{"content":"char\tStores a single character/letter or ASCII values","children":[],"payload":{"tag":"li","lines":"61,63"}}],"payload":{"tag":"li","lines":"53,63"}}],"payload":{"tag":"h2","lines":"40,41"}},{"content":"ESTRUTURAS CONDICIONAIS","children":[{"content":"&apos;E&apos; &amp;&amp; - valor bolleano | comparativo (ambas express&#xf5;es forem verdadeiras)","children":[],"payload":{"tag":"li","lines":"65,66"}},{"content":"&apos;OU&apos; || - valor bolleano ou logico | comparativo (se pelo menos uma das condi&#xe7;&#xf5;es forem verdadeiras)","children":[],"payload":{"tag":"li","lines":"66,67"}},{"content":"! n&#xe3;o -","children":[],"payload":{"tag":"li","lines":"67,68"}}],"payload":{"tag":"h2","lines":"63,64"}}]},{"colorFreezeLevel":2,"color":["#2980b9"],"initialExpandLevel":1})</script>
+</body>
+</html>
