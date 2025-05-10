@@ -36,10 +36,10 @@ public class A02_3 {
 
         if (media >= 6 && saldoFaltas < 75) {
             System.out.println("Aprovado com média: " + media);
-            System.out.println("Porcentagem de faltas: " + saldoFaltas + "%");
+        } else if (media >= 6 && saldoFaltas >= 75) {
+            System.out.println("Reprovado por faltas com média: " + media);
         } else {
             System.out.println("Reprovado por média: " + media);
-            System.out.println("Porcentagem de faltas: " + saldoFaltas + "%");
         }
 
         scanner.close();
