@@ -1,21 +1,26 @@
-package com.mycompany.a06_exemplo_classe;
+package com.mycompany.a07;
 
+//import java.util.Scanner
+        
 public class main {
-
-    public static void main(String[] args) {
-        /* criar objeto */
-        /* <nome-da-classe> <nome-do-usuario> */
-
-        Usuario usuario = new Usuario();
-
-        /*atributos*/
+    
+    
+    /* como  chamar uma função que nao depende de objeto*/
+    public static void main(String[] args){
+        exFuncao.mensagem();
         
-        usuario.nome = "Astolfo";
-        usuario.senha = "1234";
-        usuario.ID = 0001;
         
-        usuario.exibirInfo();
-        usuario.logar();
+        System.out.println("resultado " + exFuncao.Somar(10, 5));
+        
+        
+        /* outra maneira de printar na tela com uma função */
+        String msg = exFuncao.aviso();
+        System.out.println(msg);
+        
         
     }
+    
+  
+        
+    
 }
